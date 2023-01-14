@@ -1,0 +1,39 @@
+body {
+    background-image: url(../public/stelprd3833704.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nav {
+    background-color: lightgrey;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    width: 85%;
+    height: 60%;
+    justify-content: center;
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#ryan {
+    background-image: url(/src/components/ryan-pic.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+

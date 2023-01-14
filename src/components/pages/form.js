@@ -1,81 +1,40 @@
-import React, { useState } from 'react';
-
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+//  template form from emailjs to handle form data submission to email to keep me up to date on who is contacting me
+//  function that uses 'useRef' in place of 'useState' to handle email submissions with third party plugin emailjs.
 function Form() {
-    // Set my state variables for the form 
-    const [firstName, setFirstName] =useState('');
-    const [lastName, setLastName] =useState('');
-    const [email, setEmail] =useState('');
-    const [comment, setComment] =useState('');
-
-    const handleInput = (e) => {
-        // Retrieves the value of the input based on which variable is being input into.
-        const { name, value } = e.target;
-
-        // if else statement that handles the 
-        if (name == 'firstName') {
-            setFirstName(value)
-        } else if (name == 'lastName') {
-            setLastName(value)
-        } else if (name == 'email') {
-            setEmail(value)
-        } else {
-            setComment(value)
-        };
-    };
-
-    const handleSubmit = (e) => {
-        // prevent default which is to refresh page on form submit.
+    const form = useRef();
+// function that uses emailjs to send email once form is submitted and handles errors in submission.
+    const sendEmail = (e) => {
         e.preventDefault();
-
-        // Generates alert for the user upon succesful completion of form + submit
-        alert(`Hi ${firstName} ${lastName} thank you for submitting!`);
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setComment('');
+        // credentials for emailjs 
+        emailjs.sendForm('service_flaty2s', 'template_9sxl3ua', form.current, 'aFULjaOigKuvjMpP4')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
+// form that captures neccesary information on who is reaching out to contact me.
     return (
-        <div>
-          <p>
-            Hello {firstName} {lastName}
-          </p>
-          <form className="form">
-            <input
-              value={firstName}
-              name="firstName"
-              onChange={handleInput}
-              type="text"
-              placeholder="First Name"
-            />
-            <input
-              value={lastName}
-              name="lastName"
-              onChange={handleInput}
-              type="text"
-              placeholder="Last Name"
-            />
-             <input
-              value={email}
-              name="email"
-              onChange={handleInput}
-              type="text"
-              placeholder="Email"
-            />
-            <input
-              value={comment}
-              name="comment"
-              onChange={handleInput}
-              type="text"
-              placeholder="Comment"
-            />
-            <button type="button" onClick={handleSubmit}>
-              Submit
-            </button>
-          </form>
-        </div>
-      );
+        <form ref={form} onSubmit={sendEmail}>
+            <div>
+                <h1>Contact Me</h1>
+                <p>Submit your contact info and message so I can get back to you and keep in touch!</p>
+            </div>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Message</label>
+            <textarea name="message" />
+            <input type="submit" value="Send" />
+        </form>
 
-}
 
-export default Form;
+
+    );
+};
+
+export default Form

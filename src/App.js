@@ -1,9 +1,8 @@
 import React from 'react';
-import Form from './components/pages/form';
+import Container from './components/container';
 
-function App() {
-    return <Form />;
-}
+
+const App = () => <Container />;
 
 // Exports component that is being rendered from the return function.
 export default App;
