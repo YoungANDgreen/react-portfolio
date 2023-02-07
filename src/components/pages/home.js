@@ -1,26 +1,112 @@
 import React from "react";
+import { FaReact } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaBootstrap } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import { SiLinkedin } from "react-icons/si";
+import { SiStackoverflow } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 
 export default function Home() {
-    return (
-        <div id='about'>
-            <h2>Welcome! My name is Ryan Younggreen and this is my professional portfolio.
-                Here is where I will showcase my skills as a developer using experience gained both throughout my career outside of software development as well as within.
-            </h2>
-            <h1>About Me:</h1>
-            <p id='ryan'></p>
-            <p>
-                As a developer my main goal is to create software that has purpose. While creating content that is enjoyable has a very
-                important place within development my mission is to create content that functions as a custom crafted tool.
-                I became a developer to chase my own ambitions to build applications that solve problems within my industry along with
-                within my community. One of my passions is applying my traditional training in Economics to tackle issues I believe can be
-                solved together in order to strenghten our community. As the saying goes "A rising tide lifts all boats." and I believe
-                that this sentiment is at the core of not only macro issues to be taken up by a community but also a guiding principle to live by
-                when working within a team structure. The tenants of agile development embody this principle albeit through different language; but no matter
-                the syntax all roads lead to Damascus. Thank you for taking the time to come visit my portfolio and if you have made it this far
-                thank you for coming to my digital "Ted Talk".
+  return (
+    <div>
+    <div id="about">
+      <h1 id="intro">Hi, I'm Ryan!</h1>
+      <p id="ryan"></p>
+      <div id="lis">
+        <Container>
+          <Row>
+            <Col>
+              <h2 id="abp">Who Am I?</h2>
+              <ul id="containab">
+                <li>
+                  Full Stack Developer with a passion for Front End
+                  applications.
+                </li>
+                <li>
+                  Entreprenuer focused on introducing innovative solutions to
+                  key issues.
+                </li>
+                <li>Fan of all things Javascript.</li>
+                <li>Competitor that is hungry for a challenge.</li>
+              </ul>
+            </Col>
 
-            </p>
-        </div>
-    );
+            <Col>
+              <h2 id="abz">About Me:</h2>
+              <ul id="containac">
+                <li>
+                  Love to travel and experience the world. Fiji being my
+                  favorite.
+                </li>
+                <li>I get excited hearing what people are passionate about.</li>
+                <li>
+                  Believe as a community we can come together to move mountains.
+                </li>
+                <li>Always root for the underdog.</li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+        <h2>Favorite Languages and Tools:</h2>
+        <Container>
+          <Row>
+            <Col>
+              <FaReact color="Black" size={55} />
+            </Col>
+            <Col>
+              <TbBrandJavascript color="Black" size={55} />
+            </Col>
+            <Col>
+              <FaHtml5 color="Black" size={55} />
+            </Col>
+
+            <Col>
+              <FaBootstrap color="Black" size={55} />
+            </Col>
+            <Col>
+              <FaNodeJs color="Black" size={55} />
+            </Col>
+            <Col>
+              <SiMysql color="Black" size={55} />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+    </div>
+    <div id="footer">
+        <Button
+          id="footb"
+          href="https://github.com/YoungANDgreen"
+          variant="primary"
+        >
+          {" "}
+          <SiGithub color="#020300" size={55} />
+        </Button>
+        <Button
+          id="footb"
+          href="https://www.linkedin.com/in/ryan-younggreen-3622b913b/"
+          variant="primary"
+        >
+          {" "}
+          <SiLinkedin color="#020300" size={55} />
+        </Button>
+        <Button
+          id="footb"
+          href="https://stackoverflow.com/users/21160819/younggreen"
+          variant="primary"
+        >
+          {" "}
+          <SiStackoverflow color="#020300" size={55} />
+        </Button>
+      </div>
+    </div>
+  );
 }
-

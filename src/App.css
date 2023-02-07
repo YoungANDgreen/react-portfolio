@@ -1,18 +1,161 @@
 body {
-    background-image: url(../public/stelprd3833704.jpg);
+    /* background-image: url(../public/stelprd3833704.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #715AFF;
 }
 
 #nav {
-    background-color: lightgrey;
-    height: 100px;
+    background-color: #020300;
+    height: 42px;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
+#footb {
+    padding: 25px;
+    margin: 25px;
+}
+
+#footer {
+    background-color: #020300;
+    height: 160px;
+    width: 25%;
+    margin-left: 37%;
+    /* align-items: center;
+    justify-content: center; */
+    border-radius: 20%;
+    justify-items: center;
+}
+
+#nav-button {
+    Font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: aliceblue;
+    background-color: #715AFF;
+    border: 5%;
+}
+
+#resume {
+    margin-top: 5%;
+    padding: 10px;
+}
+
+#reshead {
+    Font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #FFFBDB;
+    width: 75%;
+    text-align: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+    border-color: #020300;
+    border-style: groove;
+}
 
 #about {
+    width: 85%;
+    height: 60%;
+    justify-content: center;
+    /* background-color: lightgrey; */
+    Font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #FFFBDB;
+    text-align: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#work {
+    Font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #FFFBDB;
+    font-weight: bold;
+    border-color: #020300;
+    border-style: groove;
+    width: 1200px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#containab {
+    width: 50%;
+    margin-left: 20%;
+}
+
+#containac {
+    width: 50%;
+    margin-left: 25%;
+} 
+
+#abp {
+    width: 83%;
+    margin-left: 5%;
+}
+#abz {
+    width: 59%;
+    margin-left: 20%;
+}
+
+#intro {
+    font-size: 45pt;
+}
+
+#csu {
+    background-image: url(/src/components/CSUFC.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+#ud {
+    background-image: url(/src/components/UD.png);
+    background-size: cover;
+    width: 700px;
+    height: 300px;
+}
+
+
+#ryan {
+    background-image: url(/src/components/ry3.png);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 40%;
+    border-radius: 50%;
+}
+
+#title {
+    font-size: x-large;
+    font-weight: 900;
+    font-style: oblique;
+    color: #FFFBDB;
+}
+
+#portfolio {
+    width: 85%;
+    height: 60%;
+    justify-content: space-around;
+    background-color: #FFFBDB;
+    text-align: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#contact {
     width: 85%;
     height: 60%;
     justify-content: center;
@@ -27,13 +170,9 @@ body {
     font-weight: bold;
 }
 
-#ryan {
-    background-image: url(/src/components/ryan-pic.jpg);
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    justify-content: center;
-    border-radius: 10px;
-    margin-left: 40%;
+#project-card {
+    background-color: #020300;
+    Font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: aliceblue;
 }
 
