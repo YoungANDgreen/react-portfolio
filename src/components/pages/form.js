@@ -33,9 +33,11 @@ function Contact() {
   // form that captures neccesary information on who is reaching out to contact me.
   return (
     <div>
+        
     <Form ref={form} onSubmit={sendEmail} id="contact">
       <div>
         <h1>Contact Me</h1>
+        <h1>Email: ryounggreen@gmail.com</h1>
         <p>
           Submit your contact info and message so I can get back to you and keep
           in touch!
