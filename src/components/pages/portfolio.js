@@ -114,7 +114,7 @@ export default function Portfolio() {
               Program and tools: <SiGithub color="#715AFF" size={55} />
             </Card.Text>
             <Button
-              href="https://github.com/YoungANDgreen/regex"
+              href="https://gist.github.com/YoungANDgreen/ed27d59e6dc090e4a7823fe5497f2be4"
               variant="primary"
             >
               Open
@@ -141,7 +141,7 @@ export default function Portfolio() {
               <SiNodedotjs color="#715AFF" size={55} />
             </Card.Text>
             <Button
-              href="https://youngandgreen.github.io/Weather-dashboard/"
+              href="https://github.com/YoungANDgreen/ecommerce-backend"
               variant="primary"
             >
               Open
